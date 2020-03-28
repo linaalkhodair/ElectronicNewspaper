@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+.collapsible {
+     background-color:  rgba(0, 0, 0, 0.7);
+    /*background-color: #404040;*/
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    height: 130px;
+    margin-bottom: 10px;
+    margin-left: 140px;
+    text-align: center;
+    border-radius: 25px;
+}
+body {
+    background-image: url(7.png);
+    background-attachment: fixed;
+    /*font-family: Courier;*/
+
+}
+
+.collapsible:hover {
+    background-color: rgba(77, 77, 79, 0.6);
+    /*background-color: #555;*/
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 80%;
+    margin-left: 140px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+#art1 {
+    margin-top: 70px;
+}
+
+
+.afbuttons {
+    margin-bottom: 30px;
+}
+#recieved {
+    margin-left: 10px;
+    border-bottom: solid;
+}
+/*--------------------------entrance icon---------------------*/
+#circleimage img{
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 250px;
+    box-shadow: 2px 2px black;
+}
+#circleimage img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.01s;
+}
+
+#circleimage h2{
+    text-align: center;
+    color:white;
+    margin-top: 30px;
+    font-size: 60px;
+}
+

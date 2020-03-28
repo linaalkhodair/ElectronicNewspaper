@@ -1,0 +1,265 @@
+/*-------------------<!---nav--->-------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#cssmenu:after,
+#cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#cssmenu {
+    width: auto;
+    border-bottom: 3px solid #4D4D4F;
+    font-family: Raleway, sans-serif;
+    line-height: 1;
+}
+
+#cssmenu ul {
+    background: #ffffff;
+}
+
+#cssmenu > ul > li {
+    float: left;
+}
+
+#cssmenu.align-center > ul {
+    font-size: 0;
+    text-align: center;
+}
+
+#cssmenu.align-center > ul > li {
+    display: inline-block;
+    float: none;
+}
+
+#cssmenu.align-right > ul > li {
+    float: right;
+}
+
+#cssmenu.align-right > ul > li > a {
+    margin-right: 0;
+    margin-left: -4px;
+}
+
+#cssmenu > ul > li > a {
+    z-index: 2;
+    padding: 18px 25px 12px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #444444;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    margin-right: -4px;
+}
+
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+    color: #ffffff;
+}
+
+#cssmenu > ul > li > a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: "";
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transform: perspective(5px) rotateX(2deg);
+    -webkit-transform-origin: bottom;
+    -moz-transform: perspective(5px) rotateX(2deg);
+    -moz-transform-origin: bottom;
+    transform: perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+}
+
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+    background: #4D4D4F;
+}
+
+/*-------------------<!---login--->-------------------*/
+
+html,
+body {
+    background-image: url(7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 100%;
+    align-content: center;
+}
+
+.card {
+    height: 300px;
+    margin-top: 13%;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.card-header h3 {
+    color: white;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #4D4D4F;
+    color: black;
+    border: 0 !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.remember {
+    color: white;
+}
+
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn {
+    color: white;
+    background-color: #4D4D4F;
+    width: 100px;
+    margin-top: 5%;
+    margin-right: 35%;
+}
+
+.login_btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
+}
+
+/*-------------------<!---tables--->-------------------*/
+
+.draftslist,
+.writearticles {
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-color: white;
+    border-collapse: separate;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.draftslist td {
+    padding: 2px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.draftslist td:first-child {
+    width: 350px;
+    text-align: left;
+}
+.draftslist td:nth-child(2) {
+    width: 150px;
+    text-align: left;
+}
+
+.writearticles td {
+    padding: 5px 40px;
+    border-radius: 10px;
+}
+
+.writearticles th,
+.draftslist th {
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+#submitButton {
+    text-align: center;
+}
+
+img#icon {
+    width: 20;
+    height: 20px;
+}
+
+img#icon:hover {
+    transform: scale(1.2);
+}
+
+.writearticles tr:hover,
+.draftslist tr:hover {
+    background-color: rgba(77, 77, 79, 0.6);
+}
+
+#circleimage img{
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 250px;
+    box-shadow: 2px 2px black;
+}
+#circleimage img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.01s;
+}
+
+#circleimage h2{
+    text-align: center;
+    color:white;
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+/*------------------------------------------------*/
